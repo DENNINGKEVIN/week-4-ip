@@ -11,3 +11,8 @@ function Address(city, estate, mobileNumber){
   this.estateName = estate;
   this.customerMobile = mobileNumber;
 }
+function Price(pizzaPrice, toppingPrice, crustPrice){
+  this.priceForSelectedPizza = pizzaPrice;
+  this.priceForSelectedTopping = toppingPrice;
+  this.priceForSelectedCrust = crustPrice;
+}
