@@ -1,12 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Order</title>
-</head>
-<body>
-  
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denny's-Pizza</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <link rel="icon" href="icons/icon3.jpeg">
+    <link href="icons/css/all.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="icons/icon3.jpeg" alt="image of l'unico logo"></a>
+        </div>
+        <div class="title">
+          <h1>Denny's Pizza</h1>
+        </div>
+        <ul class="navi">
+          <li>
+            <a href="index.html" class="list-group-item list-group-item-action">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="list-group-item list-group-item-action">About Us</a>
+          </li>
+          <li>
+            <a href="#contacts" class="list-group-item list-group-item-action">Contact Us</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+      <div class="row"id="moto">
+      <div class="col-md-6">
+        <h2>Place Order</h2>
+        <form id="new-order">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name...">
+          </div>
+          <div class="form-group">
+            <label>Pizza</label>
+            <select class="custom-select" id="pizza" name="pizza">
+              <option value="0">Select pizza...</option>
+              <option value="1">Veg Tikka :SMALL</option>
+              <option value="2">Veg Tikka :MEDIUM</option>
+              <option value="3">Veg Tikka :LARGE</option>
+              <option value="4">Chicken Tikka :SMALL</option>
+              <option value="5">Chicken Tikka :MEDIUM</option>
+              <option value="6">Chicken Tikka :LARGE</option>
+              <option value="7">Peri Peri Chicken :SMALL</option>
+              <option value="8">Peri Peri Chicken :MEDIUM</option>
+              <option value="9">Peri Peri Chicken :LARGE</option>
+              <option value="10">BBQ Steak :SMALL</option>
+              <option value="11">BBQ Steak :MEDIUM</option>
+              <option value="12">BBQ Steak :LARGE</option>
+              <option value="13">Boerewors :SMALL</option>
+              <option value="14">Boerewors :MEDIUM</option>
+              <option value="15">Boerewors :LARGE</option>
+              <option value="16">Hawaiian :SMALL</option>
+              <option value="17">Hawaiian :MEDIUM</option>
+              <option value="18">Hawaiian :LARGE</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Topping</label>
+            <select class="custom-select" id="topping" name="topping">
+              <option value="0">None...</option>
+              <option value="1">Pepperoni</option>
+              <option value="2">Mushroom</option>
+              <option value="3">Sausage</option>
+              <option value="4">Onions</option>
+              <option value="5">Bacon</option>
+              <option value="6">Chicken</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>crust</label>
+            <select class="custom-select" id="crust" name="crust">
+              <option value="0">Crust...</option>
+              <option value="1">Thick</option>
+              <option value="2">Thin</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Boxes</label>
+            <input type="number" min="1" max="5" class="form-control" id="boxes" placeholder="Number of boxes...">
+          </div>
+          <div class="form-group">
+            <label>Delivery Option</label>
+            <select class="custom-select" id="delivery" name="delivery">
+              <option value="0">Delivery Option...</option>
+              <option value="1">Collect</option>
+              <option value="2">Deliver</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" id="order-submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="col-md-6" id="address">
+        <h2>Address</h2>
+        <form id='delivery-address'>
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" class="form-control" id="city" placeholder="City...">
+          </div>
+          <div class="form-group">
+            <label>Estate</label>
+            <input type="text" class="form-control" id="estate" placeholder="Estate...">
+          </div>
+          <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="number" class="form-control" id="mobile" placeholder="Enter your mobile number...">
+          </div>
+          <button type="submit" class="btn btn-primary" id="delivery-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row" id="checkout">
+      <form id="checkout-form">
+        <div class="form-group">
+          <textarea name="checkout" rows="8" cols="80" id="order-summary"></textarea>
+        </div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary" id="checkout-button">Checkout</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="row" id="contacts">
+        <div class="card">
+          <div class="card-title">
+            <h2>CONTACTS</h2>
+          </div>
+          <div class="card-body">
+            <p><i class="fas fa-home"></i> Brook lane Drive, ghetto, Nairobi</p>
+            <p><i class="fas fa-phone"> </i> +254709875455</p>
+            <p><i class="fas fa-envelope"> </i> denny'spizza@gmail.com</p>
+            <p><i class="fab fa-twitter"></i> @Denny's-pizza</p>
+          </div>
+        </div>
+      </div><br>
+
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
