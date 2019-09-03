@@ -16,3 +16,7 @@ function Price(pizzaPrice, toppingPrice, crustPrice){
   this.priceForSelectedTopping = toppingPrice;
   this.priceForSelectedCrust = crustPrice;
 }
+function Bill(subtotal, boxes){
+  this.subtotalGotten = subtotal;
+  this.orderedBoxes = boxes;
+}
