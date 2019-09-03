@@ -20,3 +20,9 @@ function Bill(subtotal, boxes){
   this.subtotalGotten = subtotal;
   this.orderedBoxes = boxes;
 }
+Price.prototype.subtotal = function(){
+  return this.priceForSelectedPizza + this.priceForSelectedTopping + this.priceForSelectedCrust;
+}
+Bill.prototype.total = function(){
+  return this.subtotalGotten * this.orderedBoxes;
+}
