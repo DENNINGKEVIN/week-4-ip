@@ -1,4 +1,4 @@
-# L'UNICO PIZZERIA
+# DENNY'S PIZZA
 
 ## Description
 
@@ -11,10 +11,10 @@ Denning Kevin Mulama
 ![](screenshot.png)
 
 ## Link to the Source
-https://github.com/DENNINGKEVIN/PIZZA-HUB
+https://github.com/DENNINGKEVIN/week-4-ip
 
 ## Live link to the webpage
-
+https://denningkevin.github.io/week-4-ip/
 
 
 
@@ -32,7 +32,7 @@ https://github.com/DENNINGKEVIN/PIZZA-HUB
 ### First Method
 
 1. In the terminal navigate to the directory you want the project to reside in e.g (cd ~/Documents)
-1. Clone the project (git clone https://github.com/DENNINGKEVIN/PIZZA-HUB.git)
+1. Clone the project (git clone https://github.com/DENNINGKEVIN/week-4-ip.git)
 1. Navigate into the created folder (cd Denny"s Pizza)
 1. Open the project with a text editor ie VS (code .)
 
