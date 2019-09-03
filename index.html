@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lDennys-Pizza</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <link rel="icon" href="icons/icon3.jpeg">
+    <link href="icons/css/all.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    
+    <div class="container ">
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lDennys-Pizza</title>
-  <script src="js/jquery-3.4.1.js"></script>
-  <link rel="icon" href="icons/icon3.jpeg">
-  <link href="icons/css/all.min.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="icons/icon3.jpeg" alt="image of l'unico logo"></a>
+        </div>
+        <div class="title">
+          <h1>Denny's Pizza</h1>
+        </div>
+        <ul class="navi">
+          <li>
+            <a href="about.html" class="list-group-item list-group-item-action">About Us</a>
+          </li>
+          <li>
+            <a href="order.html" class="list-group-item list-group-item-action">Order Pizza</a>
+          </li>
+          <li>
+            <a href="#contacts" class="list-group-item list-group-item-action">Contact Us</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
 
-<body>
-  <div class="container">
+      <div class="row" id="moto">
+        <div class="col-md-6" id="img">
+        </div>
+        <div class="col-md-6">
+          <h2>Pizza Museum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque nisl semper lacinia consectetur. Vivamus nibh nibh, mattis placerat imperdiet eu, eleifend sit amet justo. Morbi eget est commodo, euismod nulla non, tincidunt enim. Pellentesque in felis vitae nisi consectetur laoreet. Pellentesque cursus magna sit amet orci tincidunt dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque fermentum eget turpis vel rutrum. Aenean nulla est, porttitor et tellus vitae, dapibus accumsan lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus in justo porta, porttitor nisi vel, pretium odio. Aliquam semper malesuada porttitor. Morbi sed ullamcorper ligula. Aliquam vitae efficitur diam.</p>
+        </div>
+      </div>
 
-    <nav>
-      <div class="logo">
-        <a href="index.html"><img src="icons/icon3.jpeg" alt="image of l'unico logo"></a>
-      </div>
-      <div class="title">
-        <h1>Denny's Pizza</h1>
-      </div>
-      <ul class="navi">
-        <li>
-          <a href="about.html" class="list-group-item list-group-item-action">About Us</a>
-        </li>
-        <li>
-          <a href="order.html" class="list-group-item list-group-item-action">Order Pizza</a>
-        </li>
-        <li>
-          <a href="#contacts" class="list-group-item list-group-item-action">Contact Us</a>
-        </li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-
-    <div class="row" id="moto">
-      <div class="col-md-6" id="img">
-      </div>
-      <div class="col-md-6">
-        <h2>Pizza Museum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque nisl semper lacinia
-          consectetur. Vivamus nibh nibh, mattis placerat imperdiet eu, eleifend sit amet justo. Morbi eget est commodo,
-          euismod nulla non, tincidunt enim. Pellentesque in felis vitae nisi consectetur laoreet. Pellentesque cursus
-          magna sit amet orci tincidunt dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia Curae; Pellentesque fermentum eget turpis vel rutrum. Aenean nulla est, porttitor et tellus
-          vitae, dapibus accumsan lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-          cubilia Curae; Vivamus in justo porta, porttitor nisi vel, pretium odio. Aliquam semper malesuada porttitor.
-          Morbi sed ullamcorper ligula. Aliquam vitae efficitur diam.</p>
-      </div>
-    </div>
-
-    <div class="row" id="menu-title">
+      <div class="row" id="menu-title">
       <h2>Menu</h2>
     </div>
     <div class="row" id="menu">
@@ -64,8 +56,7 @@
           <button type="button" class="btn btn-secondary" id="classic-button" onclick="switchClassic()">Pizzas</button>
         </li>
         <li>
-          <button type="button" class="btn btn-secondary" id="topping-button"
-            onclick="switchTopping()">Toppings</button>
+          <button type="button" class="btn btn-secondary" id="topping-button" onclick="switchTopping()">Toppings</button>
         </li>
         <li>
           <button type="button" class="btn btn-secondary" id="deluxe-button" onclick="switchDeluxe()">Crusts</button>
@@ -141,7 +132,7 @@
         <div class="col-md-4">
           <h3>Mushrooms</h3>
           <img src="images/mushroom.webp" alt=""><br>
-          <p>Additional Charge: 200</p>
+            <p>Additional Charge: 200</p>
         </div>
         <div class="col-md-4">
           <h3>Sausage</h3>
@@ -174,38 +165,34 @@
         <div class="col-md-6">
           <h3>Thin Crust</h3>
           <img src="images/meatdeluxe.jpeg" alt=""><br>
-          <p>Thin crust is commonly thought of as the first type of crust to popular pizza on the global stage, and it
-            is the de-facto pizza standard. Thin crust includes a plethora of different textures and flavor profiles, so
-            there is a little something for everyone to enjoy.</p>
+          <p>Thin crust is commonly thought of as the first type of crust to popular pizza on the global stage, and it is the de-facto pizza standard. Thin crust includes a plethora of different textures and flavor profiles, so there is a little something for everyone to enjoy.</p>
           <p>Additional Charge: 0</p>
         </div>
         <div class="col-md-6">
           <h3>Thick Crust</h3>
           <img src="images/chickenbeefpep.jpeg" alt=""><br>
-          <p>A thick crust is typically rectangular (though not always), and it is characterized by being the style of
-            crust most capable of allowing for massive amounts of delicious ingredients to rest on top of it.</p>
+          <p>A thick crust is typically rectangular (though not always), and it is characterized by being the style of crust most capable of allowing for massive amounts of delicious ingredients to rest on top of it.</p>
           <p>Additional Charge: 200</p>
         </div>
       </div>
     </div>
 
     <div class="row" id="contacts">
-      <div class="card">
-        <div class="card-title">
-          <h2>CONTACTS</h2>
+        <div class="card">
+          <div class="card-title">
+            <h2>CONTACTS</h2>
+          </div>
+          <div class="card-body">
+            <p><i class="fas fa-home"></i> Brook lane Drive, ghetto, Nairobi</p>
+            <p><i class="fas fa-phone"> </i> +254709875455</p>
+            <p><i class="fas fa-envelope"> </i> denny'spizza@gmail.com</p>
+            <p><i class="fab fa-twitter"></i> @Denny's-pizza</p>
+          </div>
         </div>
-        <div class="card-body">
-          <p><i class="fas fa-home"></i> Brook lane Drive, ghetto, Nairobi</p>
-          <p><i class="fas fa-phone"> </i> +254709875455</p>
-          <p><i class="fas fa-envelope"> </i> denny'spizza@gmail.com</p>
-          <p><i class="fab fa-twitter"></i> @Denny's-pizza</p>
-        </div>
-      </div>
-    </div><br>
+      </div><br>
 
 
-  </div>
-  <script src="js/scripts.js"></script>
-</body>
-
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
