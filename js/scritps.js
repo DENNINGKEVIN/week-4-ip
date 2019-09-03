@@ -53,3 +53,4 @@ const navSlide = () => {
     moto.classList.toggle('moto-unseen');
   });
 }
+navSlide();
