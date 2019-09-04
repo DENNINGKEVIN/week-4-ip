@@ -32,7 +32,7 @@ https://denningkevin.github.io/week-4-ip/
 ### First Method
 
 1. In the terminal navigate to the directory you want the project to reside in e.g (cd ~/Documents)
-1. Clone the project (git clone https://github.com/DENNINGKEVIN/week-4-ip.git
+1. Clone the project (git clone https://github.com/DENNINGKEVIN/week-4-ip.git)
 1. Navigate into the created folder (cd Denny"s Pizza)
 1. Open the project with a text editor ie VS (code .)
 
