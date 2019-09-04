@@ -187,7 +187,7 @@ $(document).ready(function(){
         alert(newOrder.customerName + '. Your order will be delivered to ' + newAddress.estateName + ', ' + newAddress.cityName + ' in the next 30 minutes. We will call this number (' + newAddress.customerMobile + ') when we get there. Thank you for being a loyal l-unico customer');
       }
       else{
-        alert(newOrder.customerName +', your order will be ready for collection in 25 minutes.  Thank you for being a loyal l-unico customer');
+        alert(newOrder.customerName +', your order will be ready for collection in 25 minutes.  Thank you for being a loyal customer');
       }
 
       document.getElementById("checkout-form").reset();
